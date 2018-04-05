@@ -1,7 +1,8 @@
-import numpy as np
 import csv
-import random
 import operator
+import random
+
+import numpy as np
 
 
 def loadDataset(filename, split_ratio, training=[], test=[]):
