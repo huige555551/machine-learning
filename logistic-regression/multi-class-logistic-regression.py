@@ -66,7 +66,7 @@ def calc_metrics(test_data, test_label, weights)-> tuple:
         confusion_matrix[np.argmax(prediction)][int(test_label[i])] += 1
     # precision
     precision = 0
-    for i in range(5):\
+    for i in range(5):
         precision += confusion_matrix[i][i] / sum(confusion_matrix[:,i])
     precision /= 5
     # recall
@@ -79,7 +79,7 @@ def calc_metrics(test_data, test_label, weights)-> tuple:
 
 def main():
     # 10000 iterations takes too long to run
-    steps = 100
+    steps = 1000
     learning_rate = 0.001
     train_data, train_labels, test_data, test_labels = load_data()
     train_labels = convert_to_one_hot(train_labels)
