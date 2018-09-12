@@ -1,0 +1,5 @@
+*.class
+*.log
+.cache-main
+music-speech-classifier
+
